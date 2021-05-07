@@ -1,6 +1,6 @@
-FROM heroku/heroku:16
+FROM heroku/heroku:20
 
-ARG version=0.83.0
+ARG version=21.04.0
 
 RUN apt-get -y update && apt-get -y install build-essential cmake checkinstall libfreetype6-dev libfontconfig1-dev libjpeg-dev libtiff-dev libopenjp2-7-dev
 RUN git clone https://github.com/freedesktop/poppler.git && cd poppler && git checkout poppler-${version}
