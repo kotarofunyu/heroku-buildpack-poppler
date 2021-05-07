@@ -14,6 +14,6 @@ heroku buildpacks:add -a MY-APP https://github.com/amitree/heroku-buildpack-popp
 To update the debian package, run:
 
 ```
-docker build --build-arg version=21.04.0 -t amitree/poppler:21.04.0 .
-docker run --rm -v `pwd`:/mnt amitree/poppler:21.04.0 cp /poppler/build/poppler_21.04.0-1_amd64.deb /mnt/
+docker build --build-arg version=21.05.0 -t amitree/poppler:21.05.0 .
+docker run --rm -v `pwd`:/mnt amitree/poppler:21.05.0 cp /poppler/build/poppler_21.05.0-1_amd64.deb /mnt/
 ```
